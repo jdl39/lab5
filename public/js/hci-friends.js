@@ -5,6 +5,12 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$(".profile h3").click(function(e) {
+	e.preventDefault()
+	var newName = anagrammedName($(this).text())
+	$(this).text(newName)
+})
+
 /*
  * Function that is called when the document is ready.
  */
